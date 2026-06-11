@@ -70,8 +70,6 @@ function RegistrarInscripcion(evento){
     ActualizarTablaInscripciones();
     actualizarContadoresInscripciones();
 };
-    //va actualizartabla
-    // actualizarcontadoresStock
 
 function ActualizarTablaInscripciones(){
     tbody.innerHTML = '';
