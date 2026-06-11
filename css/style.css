@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 2em;
+  background-color: #f4f6f5;
+  color: #2c3e2e;
+}
+
+.contenedor {
+  max-width: 80em;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1b4332;
+  margin-bottom: 1em;
+  border-bottom: 3px solid #52b788;
+  padding-bottom: 0.5em;
+}
+
+/* Contadores */
+.contadores {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.contador-box {
+  flex: 1;
+  min-width: 180px;
+  background-color: #ffffff;
+  border-left: 6px solid #52b788;
+  border-radius: 6px;
+  padding: 1em 1.2em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.contador-box h3 {
+  margin: 0 0 0.5em;
+  font-size: 0.95em;
+  color: #40916c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contador-box p {
+  margin: 0.2em 0;
+  font-size: 0.95em;
+}
+
+.contador-box .numero {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.contador-box.electricidad {
+  border-left-color: #d4a017;
+}
+.contador-box.electricidad .numero,
+#cupos-electricidad {
+  color: #b8860b;
+}
+
+.contador-box.gasfiteria {
+  border-left-color: #1d3557;
+}
+.contador-box.gasfiteria .numero,
+#cupos-gasfiteria {
+  color: #1d3557;
+}
+
+.contador-box.excel {
+  border-left-color: #6a4c93;
+}
+.contador-box.excel .numero,
+#cupos-excel {
+  color: #6a4c93;
+}
+
+.contador-box.recaudado {
+  background-color: #1b4332;
+  border-left-color: #52b788;
+}
+.contador-box.recaudado h3 {
+  color: #b7e4c7;
+}
+.contador-box.recaudado .numero {
+  color: #ffffff;
+}
+
+/* Formulario */
+.formulario {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5em 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: flex-end;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #1b4332;
+  flex: 1;
+  min-width: 160px;
+}
+
+.formulario input,
+.formulario select {
+  margin-top: 0.4em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.formulario button {
+  background-color: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 0.7em 1.5em;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: fit-content;
+}
+
+.formulario button:hover {
+  background-color: #1b4332;
+}
+
+.error,
+.exito {
+  width: 100%;
+  margin: 0.5em 0 0;
+  font-weight: bold;
+}
+
+.error {
+  color: #c0392b;
+}
+
+.exito {
+  color: #2d6a4f;
+}
+
+/* Tabla */
+.tabla {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #2d6a4f;
+  color: #fff;
+  padding: 0.7em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+}
+
+td {
+  padding: 0.6em;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+/* Colores por curso en la tabla */
+.bg-instalacionesElectricas {
+  background-color: #fff8e1;
+}
+
+.bg-gasfiteria {
+  background-color: #e8eef7;
+}
+
+.bg-excelAvanzado {
+  background-color: #f1eaf7;
+}

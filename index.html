@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscripción a Cursos de Capacitación</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="contenedor">
+      <h1>Inscripción a Cursos de Capacitación y Diplomados</h1>
+
+      <!-- Contadores de cupos -->
+      <div class="contadores">
+        <div class="contador-box electricidad">
+          <h3>Instalaciones Eléctricas</h3>
+          <p class="numero"><span id="cuposElectricidad">15</span></p>
+          <p>Precio: $85.000</p>
+        </div>
+        <div class="contador-box gasfiteria">
+          <h3>Técnicas de Gasfitería</h3>
+          <p class="numero"><span id ="cuposGasfiteria">12</span></p>
+          <p>Precio: $75.000</p>
+        </div>
+        <div class="contador-box excel">
+          <h3>Excel Avanzado</h3>
+          <p class="numero"><span id="cuposExcel">20</span></p>
+          <p>Precio: $60.000</p>
+        </div>
+        <div class="contador-box recaudado">
+          <h3>Monto Total de Inscripciones</h3>
+          <p class="numero"><span id="TotalInscripciones">$0</span></p>
+        </div>
+      </div>
+
+      <!-- Formulario de inscripción -->
+      <div class="formulario">
+        <form>
+          <label>Nombre del estudiante:
+            <input type="text" id="nombre"/>
+          </label>
+          <label>
+            Curso:
+            <select id="tipoCurso">
+              <option value="">-- Seleccione --</option>
+              <option value="instalacionesElectricas">Instalaciones Eléctricas Domiciliarias</option>
+              <option value="gasfiteria">Técnicas de Gasfitería</option>
+              <option value="excelAvanzado">Excel Avanzado: Optimización y Análisis de Datos</option>
+            </select>
+          </label>
+          <label>Cantidad de cupos:
+            <input type="number" id="cantidadCupos" min="1"/>
+          </label>
+          <button type="submit">Inscribir</button>
+          <!-- Mensajes de error o éxito -->
+          <p class="error" id="mensajeError"></p>
+          <p class="exito" id="mensajeExito"></p>
+        </form>
+      </div>
+
+      <!-- Tabla de inscripciones -->
+      <div class="tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Curso</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" id="montoTotal">Monto Total de Inscripciones</td>
+              <td>$0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+    <script src ="js/script.js"></script>
+  </body>
+</html>
